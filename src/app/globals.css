@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #0e0e0e;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #b91c1c #0e0e0e;
+}
+
+::-webkit-scrollbar {
+  width: 10vw;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #b91c1c;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+  background-color: #0e0e0e;
+}
+
+
+.noise::before {
+  content:"";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  pointer-events: none;
+  opacity: .02;
+  background-image: url("/noise.gif");
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .mask {
+    mask-image: url('../../public/circle.svg');
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    background: #eaeaea;
+
+    z-index: 10;
+    color:black;
+  }
+
+  .mask-paragraph {
+    @apply  w-[1000px];
+  }
+
+  .mask-wrapper {
+    @apply flex justify-center items-center h-full w-full font-intermedium text-[50px] leading-none text-center font-semibold cursor-default absolute top-1/2 -translate-y-1/2;
+  }
+
+  .marque-text {
+    animation: marquee 4s linear infinite forwards;
+  }
+
+  @keyframes marquee {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
   }
 }
