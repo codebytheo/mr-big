@@ -10,20 +10,20 @@ const dancingScript = localFont({
   variable: "--font-dancing-script",
 })
 
-const interMedium = localFont({ 
+const interMedium = localFont({
   src: './fonts/InterMedium.ttf',
   display: 'swap',
   variable: "--font-inter-medium",
 });
 
-const interSemibold = localFont({ 
-  src: './fonts/InterSemibold.ttf',
+const interSemibold = localFont({
+  src: './fonts/InterSemiBold.ttf',
   display: 'swap',
   variable: "--font-inter-semibold",
 });
 
-const interExtrabold = localFont({ 
-  src: './fonts/InterExtrabold.ttf',
+const interExtrabold = localFont({
+  src: './fonts/InterExtraBold.ttf',
   display: 'swap',
   variable: "--font-inter-extrabold",
 });
