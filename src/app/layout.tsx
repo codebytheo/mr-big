@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, Dancing_Script } from "next/font/google";
 import localFont from 'next/font/local';
 import "./globals.css";
 import LenisScroll from "@/components/lenis-scroll";
