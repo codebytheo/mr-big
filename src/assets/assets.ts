@@ -76,23 +76,23 @@ export const farewell:textProp[] = [
   }
 ]
 
-export type members = {
+export type membersType = {
   image:{
     url:string,
-    height:string,
-    width:string,
+    height:number,
+    width:number,
   },
   born:string,
   pos:string,
   p:string,
 }
 
-export const members:members[] = [
+export const members:membersType[] = [
   {
     image:{
-      url:'eric-martin.jpg',
-      height:"280px",
-      width:"220px"
+      url:"eric-martin.jpg",
+      height:300,
+      width:200
     },
     born:"Eric Martin - October 10, 1960",
     pos:"vocal",
@@ -101,8 +101,8 @@ export const members:members[] = [
   {
     image:{
       url:'paul-gilbert.jpg',
-      height:"350px",
-      width:"200px"
+      height:350,
+      width:200,
     },
     born:"Paul Gilbert - November 6, 1966",
     pos:"guitar",
@@ -111,8 +111,8 @@ export const members:members[] = [
   {
     image:{
       url:'billy-sheehan.jpeg',
-      height:"280px",
-      width:"250px"
+      height:300,
+      width:250,
     },
     born:"Billy Sheehan - March 19, 1953",
     pos:"bassist",
@@ -121,8 +121,8 @@ export const members:members[] = [
   {
     image:{
       url:'pat-torpey.jpg',
-      height:"290px",
-      width:"240px"
+      height:300,
+      width:250,
     },
     born:"Pat Torpey - December 13, 1953 – February 7, 2018",
     pos:"drummer",
@@ -131,8 +131,8 @@ export const members:members[] = [
   {
     image:{
       url:"nick-d'virgilio.jpg",
-      height:"260px",
-      width:"200px"
+      height:300,
+      width:250,
     },
     born:"Nick d' Virgilio - December 13, 1953 – February 7, 2018",
     pos:"drummer",
@@ -140,12 +140,12 @@ export const members:members[] = [
   }
 ]
 
-export const formerMembers:members[] = [
+export const formerMembers:membersType[] = [
   {
     image:{
       url:"richie-kotzen.jpg",
-      height:"300px",
-      width:"250px"
+      height:300,
+      width:250,
     },
     born:"Richie Kotzen - February 3, 1970",
     pos:"guitar",
@@ -154,8 +154,8 @@ export const formerMembers:members[] = [
   {
     image:{
       url:"matt-starr.jpg",
-      height:"300px",
-      width:"250px"
+      height:300,
+      width:250
     },
     born:"Matt Starr - December 13, 1953 – February 7, 2018",
     pos:"drummer",
