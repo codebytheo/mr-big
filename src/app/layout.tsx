@@ -15,16 +15,15 @@ const interMedium = localFont({
   variable: "--font-inter-medium",
 });
 
-const interSemibold = localFont({
-  src: './fonts/InterSemiBold.ttf',
-  display: 'swap',
-  variable: "--font-inter-semibold",
-});
-
 const interExtrabold = localFont({
   src: './fonts/InterExtraBold.ttf',
   display: 'swap',
   variable: "--font-inter-extrabold",
+});
+const clashGrotesk = localFont({
+  src: './fonts/ClashGrotesk-Medium.woff',
+  display: 'swap',
+  variable: "--font-clashgrotesk-medium",
 });
 
 export const metadata: Metadata = {
@@ -39,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interMedium.variable} ${interSemibold.variable} ${interExtrabold.variable} ${dancingScript.variable} selection:bg-red-700`}>
+      <body className={`${interMedium.variable} ${interExtrabold.variable} ${dancingScript.variable} ${clashGrotesk.variable} selection:bg-red-700`}>
         <LenisScroll>
           {children}
         </LenisScroll>

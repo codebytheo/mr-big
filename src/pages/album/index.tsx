@@ -2,9 +2,9 @@
 
 import Section from "@/components/section"
 import {TextTitle,TextRedBig} from "@/components/text"
-import {animate,motion, useMotionValue} from 'framer-motion';
+import {animate,motion, useMotionValue} from 'motion/react'
 import { useEffect, useState } from "react"
-import Card from "@/components/card"
+import CardAlbum from "./card-album"
 
 const albums = [
   'mr-big-album.jpg',
@@ -31,7 +31,7 @@ const Album = () => {
 
   useEffect(() => {
     let controls;
-    
+
     let cardWidth = document.querySelector("#card-container");
     let cardWidthImage = -cardWidth?.clientWidth! / 2 - 8;
 
@@ -44,7 +44,7 @@ const Album = () => {
           setMustFinish(false)
           setRerender(!rerender)
         }
-      })  
+      })
     } else {
       controls = animate(xTranslate, [0,cardWidthImage],{
         duration: duration,
@@ -58,7 +58,7 @@ const Album = () => {
     return controls?.stop;
 
   }, [xTranslate,duration,rerender])
-  
+
 
   return (
     <Section>
@@ -68,7 +68,7 @@ const Album = () => {
       </div>
       <div className="min-w-max">
         <motion.div
-          id="card-container" 
+          id="card-container"
           className="flex space-x-4"
           style={{x:xTranslate}}
           onHoverStart={() => {
@@ -81,10 +81,10 @@ const Album = () => {
           }}
         >
           {[...albums,...albums].map((album,idx) => (
-            <Card img={album} key={idx} />
+            <CardAlbum img={album} key={idx} />
           ))}
         </motion.div>
-      </div>    
+      </div>
     </Section>
   )
 }

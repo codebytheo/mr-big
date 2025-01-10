@@ -18,9 +18,9 @@ const config: Config = {
       },
       fontFamily: {
         intermedium: ['var(--font-inter-medium)'],
-        intersemibold: ['var(--font-inter-semibold)'],
         interextrabold: ['var(--font-inter-extrabold)'],
         dancingScript: ['var(--font-dancing-script)'],
+        clashGrotesk: ['var(--font-clashgrotesk-medium)'],
       }
     },
   },

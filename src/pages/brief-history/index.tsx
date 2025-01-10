@@ -1,10 +1,11 @@
 'use client'
 
 import Section from "@/components/section";
-import Image from "next/image";
-import {motion} from 'framer-motion';
+import {motion} from 'motion/react';
 import { useState } from "react";
 import useMousePosition from "@/hooks/useMousePosition";
+import Tag from "./tag";
+import ImageProfile from "@/components/image-profile";
 
 const BriefHistory = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
@@ -13,13 +14,13 @@ const BriefHistory = () => {
 
   return (
     <Section>
-        <div className="flex justify-between items-center absolute left-0 top-0 w-full">
-          <Image src="/img/mr-big2.jpg" alt="mr big" height={80} width={250} sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw" className="object-cover" />
-          <Image src="/img/mr-big3.jpg" alt="mr big" height={80} width={300} sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw" className="object-cover" />
-        </div>
-        <div className="">
+        <motion.div className="flex justify-between items-center absolute left-0 top-0 w-full">
+          <ImageProfile src="mr-big2.jpg" cn="w-[250px] h-[170px]" />
+          <ImageProfile src="mr-big3.jpg" cn="w-[300px] h-[150px]" />
+        </motion.div>
+        <div>
           <motion.div
-            className="border mask-wrapper mask"
+            className="mask-wrapper mask"
             animate={{
               WebkitMaskPosition: `${x - (size/2)}px ${y - (size/2)}px`,
               WebkitMaskSize: `${size}px`,
@@ -31,6 +32,13 @@ const BriefHistory = () => {
           <div className="mask-wrapper z-0">
               <p className="mask-paragraph text-red-700">Mr.Big is also known for their instrumental skills, particularly <span className="text-softwhite ">Billy Sheehan</span>'s bass solos and <span className="text-softwhite">Paul Gilbert</span>'s guitar techniques. Their music combines hard rock and blues, with strong melodies and harmonies.</p>
           </div>
+        </div>
+        <div className="absolute bottom-0 w-full flex justify-between">
+          <Tag text="ROCK" />
+          <Tag text="ALTERNATIVE ROCK" color="cyan" />
+          <Tag text="HARD ROCK" />
+          <Tag text="BLUES" />
+          <Tag text="GLAM METAL" color="amber" />
         </div>
     </Section>
   )

@@ -24,13 +24,13 @@ const Reunion = () => {
         <TextRedSmall text="& new album" />
       </div>
       <div className='relative' ref={container}>
-        <motion.div style={{translateY:yImg}} className='absolute top-60 right-0'>
-          <ImageProfile src="mr-big5.jpg" cn='w-[400px] h-[220px]' />
+        <motion.div style={{translateY:yImg}} className='absolute top-60 right-0 flex flex-col items-end space-y-4'>
+          <ImageProfile src="mr-big8.jpg" cn='w-[300px] h-[300px]' />
+          <ImageProfile src="mr-big-wallpapers.jpg" cn='w-[500px] h-[350px]' />
         </motion.div>
         <motion.div style={{translateY:yImg}} className='absolute bottom-0 right-0'>
           <ImageProfile src="mr-big7.jpg" cn='w-[300px] h-[400px]' />
         </motion.div>
-        <h1 className='text-[120px] font-dancingScript text-red-700 absolute right-0 top-1/3 -translate-y-1/2'>2009-2017</h1>
 
         <div className='[&>:nth-child(2)]:w-1/3 [&>:nth-child(2)]:mt-2 [&>:nth-child(3)]:mt-2 [&>:nth-child(4)]:mt-2 [&>:nth-child(4)]:w-1/3'>
           {

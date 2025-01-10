@@ -8,7 +8,7 @@ const Farewell = () => {
     <Section>
       <div className="relative mb-20">
         <TextTitle text="FAREWELL TOUR" cn='text-[150px]' />
-        <TextRedSmall text="The Big Finish" />
+        <TextRedSmall text="The BIG Finish" />
       </div>
       <div className="relative flex gap-8">
         <div className="flex flex-col">

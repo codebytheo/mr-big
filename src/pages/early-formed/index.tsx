@@ -1,7 +1,7 @@
 import { earlyFormed } from "@/assets/assets"
+import ImageProfile from "@/components/image-profile"
 import Section from "@/components/section"
 import {TextTitle,TextRedSmall, Paragraph} from "@/components/text"
-import Image from "next/image"
 
 const EarlyFormed = () => {
   return (
@@ -11,11 +11,11 @@ const EarlyFormed = () => {
         <TextRedSmall text="start of the journey" />
       </div>
       <div className="w-11/12 m-auto flex justify-between">
-        <div className="relative w-[300px] h-[450px] after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-t after:from-[#111] after:from-4%">
-          <Image src="/img/mr-big4.jpg" alt="mr big" fill sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw" className="object-cover grayscale" />
+        <div className="relative w-[350px] h-[500px] after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-t after:from-[#111] after:from-4%">
+          <ImageProfile src="mr-big4.jpg" cn="w-full h-full grayscale" />
         </div>
         <div className="w-1/2 [&>:nth-child(2)]:w-3/4 [&>:nth-child(2)]:ml-auto">
-          { 
+          {
             earlyFormed.map((text,idx) => (
               <Paragraph key={idx} text={text.p} />
             ))

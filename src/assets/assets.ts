@@ -75,3 +75,90 @@ export const farewell:textProp[] = [
     p:'“I hope the people who come see our shows get to feel what it’s like when musicians get together and really play and sing the songs they wrote,” added Sheehan. “We want the audience to be one with us, and feel our evening together was a magical and beautiful event.”'
   }
 ]
+
+export type members = {
+  image:{
+    url:string,
+    height:string,
+    width:string,
+  },
+  born:string,
+  pos:string,
+  p:string,
+}
+
+export const members:members[] = [
+  {
+    image:{
+      url:'eric-martin.jpg',
+      height:"280px",
+      width:"220px"
+    },
+    born:"Eric Martin - October 10, 1960",
+    pos:"vocal",
+    p:"Eric Martin continues to perform as the lead vocalist for Mr. Big. He also released several solo albums and participated in various projects, including Eric Martin Band and Avantasia"
+  },
+  {
+    image:{
+      url:'paul-gilbert.jpg',
+      height:"350px",
+      width:"200px"
+    },
+    born:"Paul Gilbert - November 6, 1966",
+    pos:"guitar",
+    p:"Paul Gilbert left Mr. Big in 1997 to pursue a solo career. He has since released numerous solo albums and also played with various bands and projects, such as Racer X and Yellow Matter Custard."
+  },
+  {
+    image:{
+      url:'billy-sheehan.jpeg',
+      height:"280px",
+      width:"250px"
+    },
+    born:"Billy Sheehan - March 19, 1953",
+    pos:"bassist",
+    p:"Billy Sheehan, known for his exceptional bass skills, left Mr. Big in 2002 due to internal conflicts. He formed a new band, Niacin, and later joined the Winery Dogs. He also collaborated with many artists, including Steve Vai and David Lee Roth"
+  },
+  {
+    image:{
+      url:'pat-torpey.jpg',
+      height:"290px",
+      width:"240px"
+    },
+    born:"Pat Torpey - December 13, 1953 – February 7, 2018",
+    pos:"drummer",
+    p:"Pat Torpey remained with Mr. Big until his death in 2018 from complications of Parkinson's disease. During his time with Mr. Big, he also worked with other artists and bands, including Robert Plant and the Winery Dogs"
+  },
+  {
+    image:{
+      url:"nick-d'virgilio.jpg",
+      height:"260px",
+      width:"200px"
+    },
+    born:"Nick d' Virgilio - December 13, 1953 – February 7, 2018",
+    pos:"drummer",
+    p:"In March 2023, it was announced that Nick D'Virgilio would be joining Mr. Big as touring drummer for the 2023-2024 'The Big Finish Tour'"
+  }
+]
+
+export const formerMembers:members[] = [
+  {
+    image:{
+      url:"richie-kotzen.jpg",
+      height:"300px",
+      width:"250px"
+    },
+    born:"Richie Kotzen - February 3, 1970",
+    pos:"guitar",
+    p:"Guitarist Paul Gilbert departed the band in 1999, and Richie Kotzen was brought on as a guitarist and vocalist. The band released two more albums with this line-up: Get Over It (1999) and Actual Size (2001). Mr. Big disbanded in 2002."
+  },
+  {
+    image:{
+      url:"matt-starr.jpg",
+      height:"300px",
+      width:"250px"
+    },
+    born:"Matt Starr - December 13, 1953 – February 7, 2018",
+    pos:"drummer",
+    p:"Matt Starr joined Mr. Big as a touring drummer in 2014, following Pat Torpey's diagnosis with Parkinson's disease. He has also worked with various artists, including Ace Frehley and Mr. Big's Eric Martin"
+  }
+]

@@ -28,13 +28,13 @@ const LineUpChange = () => {
           <div className="[&>:nth-child(2)]:w-1/2 [&>:nth-child(1)]:w-1/3 [&>:nth-child(2)]:mt-2 [&>:nth-child(3)]:w-1/2 [&>:nth-child(3)]:mt-2">
             <Paragraph text={lineUpChange[0].p} />
           </div>
-          <motion.div className="absolute w-[300px] h-[450px] right-0 top-0 z-0 grayscale after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-t after:from-[#111]"
+          <motion.div className="absolute right-0 top-0 z-0"
           style={{scale}}
           transition={{
             ease:'easeInOut'
           }}
           >
-            <Image src="/img/mr-big-2001.jpg" alt="mr-big" fill className="object-cover"  />
+            <ImageProfile src="mr-big-2001.jpg" cn="object-cover w-[300px] h-[450px]"  />
           </motion.div>
           <div className="flex w-full space-x-20">
             <motion.div style={{scale}}>
