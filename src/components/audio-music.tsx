@@ -19,7 +19,7 @@ const AudioMusic = () => {
   }
 
   return (
-    <div className="fixed w-screen h-full top-8 left-10">
+    <div className="fixed top-8 left-10 z-50">
       <button className="btn" id="playAudio" onClick={handleAudio} type="button">
       {isButtonClick ? (
         <IoVolumeHigh size={25} color="white" />

@@ -15,10 +15,10 @@ const BriefHistory = () => {
   return (
     <Section>
         <motion.div className="flex justify-between items-center absolute left-0 top-0 w-full">
-          <ImageProfile src="mr-big2.jpg" cn="w-[250px] h-[170px]" />
-          <ImageProfile src="mr-big3.jpg" cn="w-[300px] h-[150px]" />
+          <ImageProfile src="mr-big2.jpg" cn="w-[120px] md:w-[250px] h-[70px] md:h-[170px]" />
+          <ImageProfile src="mr-big3.jpg" cn="w-[120px] md:w-[300px] h-[70px] md:h-[150px]" />
         </motion.div>
-        <div>
+        <div className="h-screen">
           <motion.div
             className="mask-wrapper mask"
             animate={{
@@ -27,13 +27,13 @@ const BriefHistory = () => {
             }}
             transition={{type:'tween', ease: "easeOut", duration:0.4}}
           >
-            <p className="mask-paragraph" onMouseEnter={() => {setIsHovered(true)}} onMouseLeave={() => {setIsHovered(false)}}>However, internal conflicts and differing musical directions led to the band's disbandment in 2002. They reunited in 2009 and have since released several albums and toured globally.</p>
+            <p className="mask-paragraph" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>However, internal conflicts and differing musical directions led to the band's disbandment in 2002. They reunited in 2009 and have since released several albums and toured globally.</p>
           </motion.div>
           <div className="mask-wrapper z-0">
-              <p className="mask-paragraph text-red-700">Mr.Big is also known for their instrumental skills, particularly <span className="text-softwhite ">Billy Sheehan</span>'s bass solos and <span className="text-softwhite">Paul Gilbert</span>'s guitar techniques. Their music combines hard rock and blues, with strong melodies and harmonies.</p>
+            <p className="mask-paragraph text-red-700">Mr.Big is also known for their instrumental skills, particularly <span className="text-softwhite ">Billy Sheehan</span>'s bass solos and <span className="text-softwhite">Paul Gilbert</span>'s guitar techniques. Their music combines hard rock and blues, with strong melodies and harmonies.</p>
           </div>
         </div>
-        <div className="absolute bottom-0 w-full flex justify-between">
+        <div className="absolute bottom-0 w-full flex flex-wrap md:flex-nowrap justify-between items-start">
           <Tag text="ROCK" />
           <Tag text="ALTERNATIVE ROCK" color="cyan" />
           <Tag text="HARD ROCK" />

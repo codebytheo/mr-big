@@ -19,23 +19,23 @@ const Reunion = () => {
 
   return (
     <Section>
-      <div className="relative mb-20">
-        <TextTitle text="REUNION" cn='text-[200px]' />
+      <div className="relative mb-20 z-10">
+        <TextTitle text="REUNION" cn='text-6xl md:text-[200px]' />
         <TextRedSmall text="& new album" />
       </div>
       <div className='relative' ref={container}>
-        <motion.div style={{translateY:yImg}} className='absolute top-60 right-0 flex flex-col items-end space-y-4'>
+        <motion.div style={{translateY:yImg}} className='relative md:absolute top-0 md:top-60 right-0 z-0 flex flex-col items-center md:items-end space-y-4'>
           <ImageProfile src="mr-big8.jpg" cn='w-[300px] h-[300px]' />
-          <ImageProfile src="mr-big-wallpapers.jpg" cn='w-[500px] h-[350px]' />
+          <ImageProfile src="mr-big-wallpapers.jpg" cn='w-[300px] md:w-[500px] h-[250px] md:h-[350px]' />
         </motion.div>
-        <motion.div style={{translateY:yImg}} className='absolute bottom-0 right-0'>
+        <motion.div style={{translateY:yImg}} className='relative md:absolute md:bottom-0 md:right-0 hidden md:block'>
           <ImageProfile src="mr-big7.jpg" cn='w-[300px] h-[400px]' />
         </motion.div>
 
-        <div className='[&>:nth-child(2)]:w-1/3 [&>:nth-child(2)]:mt-2 [&>:nth-child(3)]:mt-2 [&>:nth-child(4)]:mt-2 [&>:nth-child(4)]:w-1/3'>
+        <div className='md:[&>:nth-child(2)]:w-1/3 md:[&>:nth-child(2)]:mt-2 md:[&>:nth-child(3)]:mt-2 md:[&>:nth-child(4)]:mt-2 md:[&>:nth-child(4)]:w-1/3'>
           {
             reunion.map((text,idx) => (
-              <Paragraph key={idx} text={text.p} cn='w-1/2' />
+              <Paragraph key={idx} text={text.p} cn='md:w-1/2' />
             ))
           }
         </div>
