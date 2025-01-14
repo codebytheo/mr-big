@@ -52,7 +52,7 @@ html {
   }
 
   .mask-wrapper {
-    @apply flex justify-center items-center h-full w-full font-clashGrotesk text-4xl md:text-[3.2rem] leading-none text-center font-semibold cursor-default absolute top-1/2 -translate-y-1/2;
+    @apply flex justify-center items-center h-full w-full font-clashGrotesk text-3xl md:text-[3.2rem] leading-none text-center font-semibold cursor-default absolute top-1/2 -translate-y-1/2;
   }
 
   .marque-text {

@@ -3,12 +3,6 @@ import localFont from 'next/font/local';
 import "./globals.css";
 import LenisScroll from "@/components/lenis-scroll";
 
-const dancingScript = localFont({
-  src: './fonts/DancingScript.ttf',
-  display: 'swap',
-  variable: "--font-dancing-script",
-})
-
 const interMedium = localFont({
   src: './fonts/InterMedium.ttf',
   display: 'swap',
@@ -25,6 +19,11 @@ const clashGrotesk = localFont({
   display: 'swap',
   variable: "--font-clashgrotesk-medium",
 });
+const qiaraTosfa = localFont({
+  src: './fonts/QiaraTosfa.ttf',
+  display: 'swap',
+  variable: "--font-qiara-tosfa",
+});
 
 export const metadata: Metadata = {
   title: "History of rock - MR.BIG",
@@ -38,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interMedium.variable} ${interExtrabold.variable} ${dancingScript.variable} ${clashGrotesk.variable} selection:bg-red-700`}>
+      <body className={`${interMedium.variable} ${interExtrabold.variable} ${clashGrotesk.variable} ${qiaraTosfa.variable} selection:bg-red-700`}>
         <LenisScroll>
           {children}
         </LenisScroll>

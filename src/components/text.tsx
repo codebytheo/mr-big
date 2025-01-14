@@ -36,22 +36,10 @@ export const TextTitle = ({text,cn}:props) => {
   )
 }
 
-
-export const TextRedBig = ({text,cn}:props) => {
-  return (
-    <div>
-      <p className={`font-dancingScript font-bold absolute left-1/2 bottom-0 -translate-x-1/2 text-5xl md:text-[6.3rem] text-red-700 z-10 leading-none ${cn}`}>{text}</p>
-      <p className={`font-dancingScript font-bold absolute left-1/2 bottom-0 -translate-x-[49.6%] text-5xl md:text-[6.3rem]  text-red-500 leading-none ${cn}`}>{text}</p>
-      <p className={`font-dancingScript font-bold absolute left-1/2 bottom-0 -translate-x-[50.6%] text-5xl md:text-[6.3rem] text-red-900 leading-none ${cn}`}>{text}</p>
-    </div>
-  )
-}
 export const TextRedSmall = ({text,cn}:props) => {
   return (
     <div>
-      <p className={`font-dancingScript font-bold absolute left-1/2 bottom-0 -translate-x-1/2 text-3xl md:text-[5rem] text-red-700 z-10 leading-none ${cn}`}>{text}</p>
-      <p className={`font-dancingScript font-bold absolute left-1/2 bottom-0 -translate-x-[49.6%] text-3xl md:text-[5rem] text-red-500 leading-none ${cn}`}>{text}</p>
-      <p className={`font-dancingScript font-bold absolute left-1/2 bottom-0 -translate-x-[50.6%] text-3xl md:text-[5rem] text-red-900 leading-none ${cn}`}>{text}</p>
+      <p className={`font-qiaraTosfa w-full absolute left-1/2 bottom-0 -translate-x-1/2 text-center text-[3rem] md:text-[7rem] text-red-700 z-10 leading-none ${cn}`}>{text}</p>
     </div>
   )
 }
