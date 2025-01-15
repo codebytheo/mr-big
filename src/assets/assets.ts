@@ -69,10 +69,19 @@ export const farewell:textProp[] = [
     p:"Following MR. BIG‘s run in Japan and Southeast Asia over the summer, the band brings “The BIG Finish” to Europe next March and April that will see a set spanning their career, including a performance of their classic breakthrough album “Lean Into It” in full."
   },
   {
-    p:'“We’re in the process of making sure we come up with a suitably big entertainment extravaganza to go along with our music," Gilbert said in a press release, "and since our music has resonated so wonderfully in places all over the world, we’re going to play in as many of those places as we can.”'
+    p:'We wanted to do a proper farewell, and this seems like the right way to do it'
   },
   {
-    p:'“I hope the people who come see our shows get to feel what it’s like when musicians get together and really play and sing the songs they wrote,” added Sheehan. “We want the audience to be one with us, and feel our evening together was a magical and beautiful event.”'
+    p:'We’re in the process of making sure we come up with a suitably big entertainment extravaganza to go along with our music. And since our music has resonated so wonderfully in places all over the world, we’re going to play in as many of those places as we can.'
+  },
+  {
+    p:'If we were in the movie business, we’d just put it all up in lights and say, ‘Welcome to ‘The BIG Finish’!’ Seriously, I’m glad we’re getting a chance to do it all onstage together as MR. BIG again and raise a flag to everything we’ve done as a band over the years.'
+  },
+  {
+    p:'Joining Mr.Big on drums for this special final world tour will be longtime friend of the band Nick D’Virgilio (SPOCK’S BEARD, BIG BIG TRAIN).'
+  },
+  {
+    p:'We found a wonderful drummer in Nick, and he’s got a great voice too,Nick has a vocal range similar to Pat‘s, and he’ll be able to do the parts Pat did with a similar finesse. It’s a big relief because MR. BIG has always been heavy on the harmonies. When the band began, we really relied on each other. We knew each guy would do exactly what he needed to do vocally and to do it righteously, on key, and in time. It’s difficult to find a drummer who sings in that range, but Nick has the voice we really need onstage.'
   }
 ]
 
@@ -101,7 +110,7 @@ export const members:membersType[] = [
   {
     image:{
       url:'paul-gilbert.jpg',
-      height:350,
+      height:400,
       width:200,
     },
     born:"Paul Gilbert - November 6, 1966",
