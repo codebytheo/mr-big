@@ -15,10 +15,10 @@ const BriefHistory = () => {
   return (
     <Section>
         <motion.div className="flex justify-between items-center absolute left-0 top-0 w-full">
-          <ImageProfile src="mr-big2.jpg" cn="w-[120px] md:w-[250px] h-[70px] md:h-[170px]" />
-          <ImageProfile src="mr-big3.jpg" cn="w-[120px] md:w-[300px] h-[70px] md:h-[150px]" />
+          <ImageProfile src="mr-big2.jpg" cn="w-[120px] md:w-[300px] h-[70px] md:h-[200px]" />
+          <ImageProfile src="mr-big3.jpg" cn="w-[120px] md:w-[350px] h-[70px] md:h-[200px]" />
         </motion.div>
-        <div className="h-screen">
+        <div className="h-[60vh] md:h-screen">
           <motion.div
             className="mask-wrapper mask"
             animate={{

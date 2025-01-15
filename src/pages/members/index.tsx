@@ -2,7 +2,7 @@
 
 import ImageProfile from '@/components/image-profile';
 import Section from '@/components/section';
-import {TextTitle,TextRedBig} from "@/components/text";
+import {TextTitle, TextRedSmall} from "@/components/text";
 import { formerMembers, members } from '@/assets/assets';
 import CardMember from './card-member';
 
@@ -11,7 +11,7 @@ const Members = () => {
     <Section>
       <div className="relative mb-20">
         <TextTitle text="MEMBERS" cn='text-5xl md:text-[200px]' />
-        <TextRedBig text="MR.BIG"/>
+        <TextRedSmall text="MR.BIG"/>
       </div>
       <div className='relative min-h-screen md:h-[120vh] w-full flex items-center overflow-hidden'
       >

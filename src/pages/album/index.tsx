@@ -1,7 +1,7 @@
 'use client'
 
 import Section from "@/components/section"
-import {TextTitle,TextRedBig} from "@/components/text"
+import {TextTitle, TextRedSmall} from "@/components/text"
 import {animate,motion, useMotionValue} from 'motion/react'
 import { useEffect, useState } from "react"
 import CardAlbum from "./card-album"
@@ -64,7 +64,7 @@ const Album = () => {
     <Section>
       <div className="relative mb-20">
         <TextTitle text="ALBUM" cn="text-6xl md:text-[200px]" />
-        <TextRedBig text="studio" />
+        <TextRedSmall text="studio" />
       </div>
       <div className="min-w-max">
         <motion.div

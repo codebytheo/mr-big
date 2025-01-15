@@ -4,7 +4,6 @@ import { lineUpChange } from "@/assets/assets"
 import ImageProfile from "@/components/image-profile"
 import Section from "@/components/section"
 import {Paragraph, TextTitle,TextRedSmall} from "@/components/text"
-import Image from "next/image"
 import {motion,useScroll,useTransform} from 'motion/react'
 import { useRef } from "react"
 
@@ -21,14 +20,14 @@ const LineUpChange = () => {
     <Section>
       <motion.div ref={container}>
         <div className="relative mb-20">
-          <TextTitle text="LINE-UP CHANGE" cn="text-4xl md:text-[150px]" />
+          <TextTitle text="LINE-UP CHANGE" cn="text-[2.5rem] md:text-[150px]" />
           <TextRedSmall text="& break-up" />
         </div>
         <div className="relative flex flex-col gap-20">
           <div className="md:[&>:nth-child(2)]:w-1/2 md:[&>:nth-child(1)]:w-1/3 md:[&>:nth-child(2)]:mt-2 md:[&>:nth-child(3)]:w-1/2 md:[&>:nth-child(3)]:mt-2">
             <Paragraph text={lineUpChange[0].p} />
           </div>
-          <motion.div className="relative md:absolute right-0 top-0 z-0 m-auto md:m-0"
+          <motion.div className="relative md:absolute right-0 top-0 z-0"
           style={{scale}}
           transition={{
             ease:'easeInOut'
@@ -36,7 +35,7 @@ const LineUpChange = () => {
           >
             <ImageProfile src="mr-big-2001.jpg" cn="object-cover w-[300px] md:w-[300px] h-[450px] md:h-[450px]"  />
           </motion.div>
-          <div className="flex flex-col md:flex-row w-full space-x-0 md:space-x-20 items-center md:items-start">
+          <div className="flex flex-col md:flex-row w-full space-x-0 md:space-x-20">
             <motion.div style={{scale}}>
               <ImageProfile src="mr-big-1999.jpg" cn="w-[300px] md:w-[400px] h-[300px] md:h-[400px]" />
             </motion.div>

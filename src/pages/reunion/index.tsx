@@ -4,7 +4,7 @@ import { reunion } from '@/assets/assets';
 import ImageProfile from '@/components/image-profile';
 import Section from '@/components/section';
 import { Paragraph,TextRedSmall,TextTitle } from '@/components/text';
-import {motion,useScroll,useTransform} from 'framer-motion';
+import {motion,useScroll,useTransform} from 'motion/react';
 import { useRef } from 'react';
 
 const Reunion = () => {

@@ -1,16 +1,15 @@
 import ImageProfile from "@/components/image-profile"
 import MarqueText from "@/components/marque-text"
-import Image from "next/image"
 
 const Intro = () => {
   return (
     <section className="w-11/12 min-h-screen m-auto">
       <div className="flex flex-col items-center leading-none">
-        <div className="text-4xl md:text-[150px] font-interextrabold text-center md:tracking-[-8px] leading-none text-softwhite flex space-x-4 items-center">
+        <div className="text-5xl md:text-[150px] font-interextrabold text-center md:tracking-[-8px] leading-none text-softwhite flex space-x-4 items-center">
           <span>HISTORY OF</span>
           <ImageProfile src="mr-big-logo.png" cn="w-[50px] h-[50px] md:w-[170px] md:h-[120px]" />
         </div>
-        <div className="relative w-full h-[200px] md:h-[400px] after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-t after:from-[#111] after:from-4%">
+        <div className="relative w-full h-[200px] md:h-[400px] after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-t after:from-[#111] after:from-4% mt-4 md:mt-0">
           <ImageProfile src="mr-big-bg2.jpg" cn="w-full h-full" pos="top" />
         </div>
 

@@ -1,6 +1,6 @@
 import { awards } from "@/assets/assets"
 import Section from "@/components/section"
-import {TextTitle,TextRedBig} from "@/components/text"
+import {TextTitle, TextRedSmall} from "@/components/text"
 import List from "./List"
 
 const Awards = () => {
@@ -8,7 +8,7 @@ const Awards = () => {
     <Section>
       <div className="relative mb-20">
         <TextTitle text="AWARDS" cn="text-6xl md:text-[200px]" />
-        <TextRedBig text="achievment" />
+        <TextRedSmall text="achievment" />
       </div>
       <ul>
         {
