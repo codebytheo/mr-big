@@ -7,16 +7,37 @@ import { useEffect, useState } from "react"
 import CardAlbum from "./card-album"
 
 const albums = [
-  'mr-big-album.jpg',
-  'lean-into-it.jpg',
-  'bump-ahead.jpg',
-  'hey-man.jpg',
-  'get-over-it.jpg',
-  'actual-size.jpg',
-  'what-if.jpg',
-  'the-stories-we-could-tell.jpg',
-  'defying-gravity.jpg',
-  'ten.webp',
+  {
+    title:"MR.BIG",
+    img:'mr-big-album.jpg'
+  },
+  {
+    title:"Lean into it",
+    img:'lean-into-it.jpg'},
+  {
+    title:"Bump ahead",
+    img:'bump-ahead.jpg'},
+  {
+    title:"Hey man",
+    img:'hey-man.jpg'},
+  {
+    title:"Get over it",
+    img:'get-over-it.jpg'},
+  {
+    title:"Actual size",
+    img:'actual-size.jpg'},
+  {
+    title:"What if",
+    img:'what-if.jpg'},
+  {
+    title:"The stories we could tell",
+    img:'the-stories-we-could-tell.jpg'},
+  {
+    title:"Defying gravity",
+    img:'defying-gravity.jpg'},
+  {
+    title:"Ten",
+    img:'ten.webp'},
 ]
 
 const Album = () => {
@@ -81,7 +102,7 @@ const Album = () => {
           }}
         >
           {[...albums,...albums].map((album,idx) => (
-            <CardAlbum img={album} key={idx} />
+            <CardAlbum img={album?.img} title={album?.title} key={idx} />
           ))}
         </motion.div>
       </div>
