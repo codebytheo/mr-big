@@ -15,7 +15,7 @@ const Intro = () => {
 
         <MarqueText text="MR.BIG" />
 
-        <div className="w-11/12 font-clashGrotesk text-zinc-300 leading-tight text-2xl md:text-[2.5rem] text-justify mt-10">
+        <div className="w-11/12 font-clashGrotesk text-softwhite leading-tight text-2xl md:text-[2.5rem] text-justify mt-10">
             Mr. Big is an American rock band 🤘 that was formed in 1988. The original members were Eric Martin (lead vocals), Paul Gilbert (guitar), Billy Sheehan (bass), and Pat Torpey (drums). The band gained popularity in the early 1990s with their hit singles "To Be With You" 🎸 and "Green-Tinted Sixties Mind" 🎸 both of which were included in their second studio album, "Lean Into It" (1991). "To Be With You" topped the Billboard Hot 100 chart for three weeks, making Mr. Big a household name.
         </div>
       </div>

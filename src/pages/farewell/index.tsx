@@ -2,7 +2,6 @@ import { farewell } from "@/assets/assets"
 import ImageProfile from "@/components/image-profile"
 import Section from "@/components/section"
 import { Paragraph, TextRedSmall, TextTitle } from "@/components/text"
-import { IoMdQuote } from "react-icons/io";
 import Note from "./note";
 
 const Farewell = () => {
@@ -33,7 +32,8 @@ const Farewell = () => {
           <Paragraph text={farewell[5].p} cn="w-3/4 md:w-1/3" />
           <Note note={farewell[6].p} member="confirms Sheehan" />
       </div>
-      <div className="flex flex-col gap-20">
+      <h1 className="text-5xl md:text-[10rem] font-qiaraTosfa text-red-700 border">concert's documentation</h1>
+      <div className="flex flex-col gap-20 relative">
         <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-0">
           <div className="flex gap-2">
             <ImageProfile src="concert-1.jpg" cn="w-[180px] h-[100px] md:w-[500px] md:h-[300px]" />

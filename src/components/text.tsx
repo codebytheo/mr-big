@@ -11,7 +11,7 @@ type props = {
 
 export const Paragraph = ({text,cn}:props) => {
   return (
-    <p className={`text-zinc-300 indent-20 text-xl font-intermedium text-justify ${cn}`}>{text}</p>
+    <p className={`text-softwhite indent-20 text-base md:text-xl font-intermedium ${cn}`}>{text}</p>
   )
 }
 

@@ -4,11 +4,13 @@ import { lineUpChange } from "@/assets/assets"
 import ImageProfile from "@/components/image-profile"
 import Section from "@/components/section"
 import {Paragraph, TextTitle,TextRedSmall} from "@/components/text"
+import useMobileSize from "@/hooks/useMobileSize"
 import {motion,useScroll,useTransform} from 'motion/react'
 import { useRef } from "react"
 
 const LineUpChange = () => {
   const container = useRef(null)
+  const isMobile = useMobileSize()
   const {scrollYProgress} = useScroll({
     target: container,
     offset: ['start end', `${300}px`]
@@ -28,7 +30,7 @@ const LineUpChange = () => {
             <Paragraph text={lineUpChange[0].p} />
           </div>
           <motion.div className="relative md:absolute right-0 top-0 z-0"
-          style={{scale}}
+          style={{scale : isMobile ? 1 : scale}}
           transition={{
             ease:'easeInOut'
           }}
@@ -36,7 +38,8 @@ const LineUpChange = () => {
             <ImageProfile src="mr-big-2001.jpg" cn="object-cover w-[300px] md:w-[300px] h-[450px] md:h-[450px]"  />
           </motion.div>
           <div className="flex flex-col md:flex-row w-full space-x-0 md:space-x-20">
-            <motion.div style={{scale}}>
+            <motion.div style={{
+              scale : isMobile ? 1 : scale}}>
               <ImageProfile src="mr-big-1999.jpg" cn="w-[300px] md:w-[400px] h-[300px] md:h-[400px]" />
             </motion.div>
             <div className="w-full md:w-1/2 mt-4 md:mt-0">
