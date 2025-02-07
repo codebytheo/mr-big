@@ -1,5 +1,6 @@
 'use client'
 
+import useMobileSize from '@/hooks/useMobileSize';
 import {motion,useScroll, useTransform} from 'motion/react';
 import { useRef } from 'react';
 
@@ -18,6 +19,7 @@ export const Paragraph = ({text,cn}:props) => {
 
 export const TextTitle = ({text,cn}:props) => {
   const container = useRef<HTMLHeadingElement | null>(null)
+  const isMobile = useMobileSize()
   const {scrollYProgress} = useScroll({
     target:container,
     offset:['start end', 'start start'],
@@ -28,7 +30,7 @@ export const TextTitle = ({text,cn}:props) => {
   return (
     <motion.h1
       ref={container}
-      style={{translateY:y}}
+      style={{translateY: isMobile ? 0 : y}}
       className={`relative font-interextrabold font-extrabold text-center tracking-tighter leading-none text-softwhite ${cn}`}
       >
         {text}

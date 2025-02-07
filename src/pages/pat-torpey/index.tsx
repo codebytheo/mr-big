@@ -5,7 +5,7 @@ import {Paragraph, TextTitle,TextRedSmall} from "@/components/text"
 const PatTorpey = () => {
   return (
     <Section>
-      <div className="relative mb-20">
+      <div className="relative mb-10 md:mb-20">
         <TextTitle text="DEATH OF PAT TORPEY" cn="text-6xl md:text-[7.5rem]" />
         <TextRedSmall text="& new drummer" />
       </div>

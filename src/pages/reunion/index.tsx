@@ -22,7 +22,7 @@ const Reunion = () => {
 
   return (
     <Section>
-      <div className="relative mb-20 z-10">
+      <div className="relative mb-10 md:mb-20">
         <TextTitle text="REUNION" cn='text-[5rem] md:text-[12.5rem]' />
         <TextRedSmall text="& new album" />
       </div>

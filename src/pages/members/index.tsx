@@ -9,8 +9,8 @@ import CardMember from './card-member';
 const Members = () => {
   return (
     <Section>
-      <div className="relative mb-20">
-        <TextTitle text="MEMBERS" cn='text-[5rem] md:text-[12.5rem]' />
+      <div className="relative mb-10 md:mb-20">
+        <TextTitle text="MEMBERS" cn='text-[4.5rem] md:text-[12.5rem]' />
         <TextRedSmall text="MR.BIG"/>
       </div>
       <div className='relative min-h-screen md:h-[120vh] w-full flex items-center overflow-hidden'

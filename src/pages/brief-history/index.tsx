@@ -6,11 +6,13 @@ import { useState } from "react";
 import useMousePosition from "@/hooks/useMousePosition";
 import Tag from "./tag";
 import ImageProfile from "@/components/image-profile";
+import useMobileSize from "@/hooks/useMobileSize";
 
 const BriefHistory = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
+  const isMobile = useMobileSize()
   const { x,y } = useMousePosition()
-  const size = isHovered ? 400 : 40
+  const size = isHovered && !isMobile ? 400 : isHovered && isMobile ? 200 : 40
 
   return (
     <Section>
@@ -18,7 +20,7 @@ const BriefHistory = () => {
         <ImageProfile src="mr-big2.jpg" cn="w-[120px] md:w-[300px] h-[70px] md:h-[200px]" />
         <ImageProfile src="mr-big3.jpg" cn="w-[120px] md:w-[350px] h-[70px] md:h-[200px]" />
       </motion.div>
-      <div className="h-[60vh] md:h-screen">
+      <div className="h-[60vh] md:h-screen border">
         <motion.div
           className="mask-wrapper mask"
           animate={{

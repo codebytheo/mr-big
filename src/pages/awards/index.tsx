@@ -6,7 +6,7 @@ import List from "./List"
 const Awards = () => {
   return (
     <Section>
-      <div className="relative mb-20">
+      <div className="relative mb-10 md:mb-20">
         <TextTitle text="AWARDS" cn="text-[5rem] md:text-[12.5rem]" />
         <TextRedSmall text="achievment" />
       </div>

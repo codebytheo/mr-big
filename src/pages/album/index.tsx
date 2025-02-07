@@ -83,7 +83,7 @@ const Album = () => {
 
   return (
     <Section>
-      <div className="relative mb-20">
+      <div className="relative mb-10 md:mb-20">
         <TextTitle text="ALBUM" cn="text-[5rem] md:text-[12.5rem]" />
         <TextRedSmall text="studio" />
       </div>
