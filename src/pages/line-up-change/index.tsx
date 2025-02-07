@@ -22,7 +22,7 @@ const LineUpChange = () => {
     <Section>
       <motion.div ref={container}>
         <div className="relative mb-20">
-          <TextTitle text="LINE-UP CHANGE" cn="text-[2.5rem] md:text-[150px]" />
+          <TextTitle text="LINE-UP CHANGE" cn="text-[3rem] md:text-[9.3rem]" />
           <TextRedSmall text="& break-up" />
         </div>
         <div className="relative flex flex-col gap-20">

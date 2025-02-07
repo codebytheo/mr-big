@@ -23,16 +23,16 @@ const Reunion = () => {
   return (
     <Section>
       <div className="relative mb-20 z-10">
-        <TextTitle text="REUNION" cn='text-6xl md:text-[200px]' />
+        <TextTitle text="REUNION" cn='text-[5rem] md:text-[12.5rem]' />
         <TextRedSmall text="& new album" />
       </div>
       <div className='w-full relative flex flex-col md:flex-row justify-between' ref={container}>
-      <motion.div
+        <motion.div
           style={{translateY: isMobile ? 0 : yImg}}
-          className='relative md:top-60 z-0 flex flex-1 flex-col items-center md:items-start space-y-4'>
-          <div className="flex flex-col md:flex-row gap-2">
-            <ImageProfile src="mr-big7.jpg" cn='w-[250px] h-[350px]' />
-            <ImageProfile src="mr-big8.jpg" cn='w-[250px] h-[250px]' />
+          className='relative md:top-60 z-0 flex flex-1 flex-col space-y-4'>
+          <div className="flex flex-row gap-2">
+            <ImageProfile src="mr-big7.jpg" cn='w-[200px] md:w-[250px] h-[300px] md:h-[350px]' />
+            <ImageProfile src="mr-big8.jpg" cn='w-[200px] md:w-[250px] h-[200px] md:h-[250px]' />
           </div>
           <ImageProfile src="mr-big-wallpapers.jpg" cn='w-[300px] md:w-[500px] h-[250px] md:h-[350px]' />
         </motion.div>

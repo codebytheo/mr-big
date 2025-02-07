@@ -110,7 +110,7 @@ export const members:membersType[] = [
   {
     image:{
       url:'paul-gilbert.jpg',
-      height:400,
+      height:300,
       width:200,
     },
     born:"Paul Gilbert - November 6, 1966",

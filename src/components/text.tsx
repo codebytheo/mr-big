@@ -39,7 +39,7 @@ export const TextTitle = ({text,cn}:props) => {
 export const TextRedSmall = ({text,cn}:props) => {
   return (
     <div>
-      <p className={`font-qiaraTosfa w-full absolute left-1/2 bottom-0 -translate-x-1/2 text-center text-[3rem] md:text-[7rem] text-red-700 z-10 leading-none ${cn}`}>{text}</p>
+      <p className={`font-qiaraTosfa w-full absolute left-1/2 bottom-0 -translate-x-1/2 text-center text-[3rem] md:text-[7rem] text-red-700 z-10 leading-none tracking-wider md:tracking-normal ${cn}`}>{text}</p>
     </div>
   )
 }

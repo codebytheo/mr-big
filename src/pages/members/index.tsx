@@ -10,7 +10,7 @@ const Members = () => {
   return (
     <Section>
       <div className="relative mb-20">
-        <TextTitle text="MEMBERS" cn='text-5xl md:text-[200px]' />
+        <TextTitle text="MEMBERS" cn='text-[5rem] md:text-[12.5rem]' />
         <TextRedSmall text="MR.BIG"/>
       </div>
       <div className='relative min-h-screen md:h-[120vh] w-full flex items-center overflow-hidden'
