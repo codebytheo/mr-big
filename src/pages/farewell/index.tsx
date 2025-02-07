@@ -7,8 +7,8 @@ import Note from "./note";
 const Farewell = () => {
   return (
     <Section>
-      <div className="relative mb-20">
-        <TextTitle text="FAREWELL TOUR" cn='text-6xl md:text-[9.3rem]' />
+      <div className="relative mb-10 md:mb-20">
+        <TextTitle text="FAREWELL TOUR" cn='text-[2.8rem] md:text-[9.3rem]' />
         <TextRedSmall text="The BIG Finish" />
       </div>
       <div className="relative flex flex-col md:flex-row gap-8">
