@@ -8,14 +8,23 @@ export const reunion:textProp[] = [
     p:"A near Mr. Big 'one-off' reunion took place on May 13, 2008, in Los Angeles, at the House of Blues, when Paul Gilbert was joined on stage by Pat Torpey, Richie Kotzen, and Billy Sheehan, for renditions of Humble Pie's '30 Days in the Hole' and original Mr. Big composition 'Daddy, Brother, Lover, Little Boy'. Reportedly, the three had such an amazing time that they decided to contact Eric Martin a few days later, and a reunion of the four original members (Paul, Eric, Pat, and Billy) was put into motion."
   },
   {
-    p:"On February 1, 2009, a radio announcement for 'Koh Sakai's Burrn Presents: Heavy Metal Syndicate' contained a short message from Mr. Big, announcing the reunion of the original Mr. Big line-up to celebrate the twentieth anniversary of their debut album. A press conference in Japan in February generated much excitement, and a tour of the country starting in June was announced, with shows in ten locations (including the Budokan). They held their first reunion concert outside Japan at Rock Cafe in Tallinn, Estonia, in September 2009, continuing their tour. Mr. Big toured India in October 2009 as part of the Reunion Tour, playing to huge crowds in Bangalore, Dimapur, and Shillong. In September 2010, Mr. Big recorded a seventh album with producer Kevin Shirley at a Los Angeles-area studio. The album was released in Japan on December 15, 2010, in Europe on January 21, 2011, and in the US in February 2011."
+    p:"On February 1, 2009, a radio announcement for 'Koh Sakai's Burrn Presents: Heavy Metal Syndicate' contained a short message from Mr. Big, announcing the reunion of the original Mr. Big line-up to celebrate the twentieth anniversary of their debut album. A press conference in Japan in February generated much excitement, and a tour of the country starting in June was announced, with shows in ten locations (including the Budokan)."
+  },
+  {
+    p:"They held their first reunion concert outside Japan at Rock Cafe in Tallinn, Estonia, in September 2009, continuing their tour. Mr. Big toured India in October 2009 as part of the Reunion Tour, playing to huge crowds in Bangalore, Dimapur, and Shillong."
+  },
+  {
+    p:"In September 2010, Mr. Big recorded a seventh album with producer Kevin Shirley at a Los Angeles-area studio. The album was released in Japan on December 15, 2010, in Europe on January 21, 2011, and in the US in February 2011."
   },
   {
     p:"What If... is their first album of new material in nearly 10 years. The band also toured in support of the album. The tour to support the album kicked off at The House of Blues, in Hollywood, California, on April 2, 2011, and ended at the Rockout Festival in Istanbul, Turkey, in October 2011. The band also appeared at the Download Festival in June 2011. As part of the album release, the group created a music video for the song 'Undertow'. Directed by Vicente Cordero and Fernando Cordero, it featured the band in an industrial park."
   },
   {
-    p:"Mr. Big released their eighth studio album ...The Stories We Could Tell on September 30, 2014, via Frontiers Records. It was produced by Pat Regan, who returned as producer for the first time since 1999's Get Over It. The band confirmed that Pat's fill-in for the upcoming world tour would be Burning Rain drummer Matt Starr, who had also previously performed with Ace Frehley and Joe Lynn Turner. The group's latest album, Defying Gravity, was recorded in Los Angeles in six days, and released on July 21, 2017. Due to Pat Torpey being diagnosed with Parkinson's disease, he could not play drums fully on the record and played on only several tracks. Matt Starr recorded the drum tracks, while Pat Torpey acted as 'drum producer.'"
+    p:"Mr. Big released their eighth studio album ...The Stories We Could Tell on September 30, 2014, via Frontiers Records. It was produced by Pat Regan, who returned as producer for the first time since 1999's Get Over It."
   },
+  {
+    p:"The band confirmed that Pat's fill-in for the upcoming world tour would be Burning Rain drummer Matt Starr, who had also previously performed with Ace Frehley and Joe Lynn Turner. The group's latest album, Defying Gravity, was recorded in Los Angeles in six days, and released on July 21, 2017. Due to Pat Torpey being diagnosed with Parkinson's disease, he could not play drums fully on the record and played on only several tracks. Matt Starr recorded the drum tracks, while Pat Torpey acted as 'drum producer.'"
+  }
 ]
 
 export const earlyFormed:textProp[] = [
@@ -170,4 +179,38 @@ export const formerMembers:membersType[] = [
     pos:"drummer",
     p:"Matt Starr joined Mr. Big as a touring drummer in 2014, following Pat Torpey's diagnosis with Parkinson's disease. He has also worked with various artists, including Ace Frehley and Mr. Big's Eric Martin"
   }
+]
+
+export const albums = [
+  {
+    title:"MR.BIG",
+    img:'mr-big-album.jpg'
+  },
+  {
+    title:"Lean into it",
+    img:'lean-into-it.jpg'},
+  {
+    title:"Bump ahead",
+    img:'bump-ahead.jpg'},
+  {
+    title:"Hey man",
+    img:'hey-man.jpg'},
+  {
+    title:"Get over it",
+    img:'get-over-it.jpg'},
+  {
+    title:"Actual size",
+    img:'actual-size.jpg'},
+  {
+    title:"What if",
+    img:'what-if.jpg'},
+  {
+    title:"The stories we could tell",
+    img:'the-stories-we-could-tell.jpg'},
+  {
+    title:"Defying gravity",
+    img:'defying-gravity.jpg'},
+  {
+    title:"Ten",
+    img:'ten.webp'},
 ]

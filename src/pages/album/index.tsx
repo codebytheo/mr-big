@@ -5,40 +5,7 @@ import {TextTitle, TextRedSmall} from "@/components/text"
 import {animate,motion, useMotionValue} from 'motion/react'
 import { useEffect, useState } from "react"
 import CardAlbum from "./card-album"
-
-const albums = [
-  {
-    title:"MR.BIG",
-    img:'mr-big-album.jpg'
-  },
-  {
-    title:"Lean into it",
-    img:'lean-into-it.jpg'},
-  {
-    title:"Bump ahead",
-    img:'bump-ahead.jpg'},
-  {
-    title:"Hey man",
-    img:'hey-man.jpg'},
-  {
-    title:"Get over it",
-    img:'get-over-it.jpg'},
-  {
-    title:"Actual size",
-    img:'actual-size.jpg'},
-  {
-    title:"What if",
-    img:'what-if.jpg'},
-  {
-    title:"The stories we could tell",
-    img:'the-stories-we-could-tell.jpg'},
-  {
-    title:"Defying gravity",
-    img:'defying-gravity.jpg'},
-  {
-    title:"Ten",
-    img:'ten.webp'},
-]
+import { albums } from "@/assets/assets"
 
 const Album = () => {
   const FAST_DURATION = 25;

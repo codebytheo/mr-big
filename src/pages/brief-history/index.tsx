@@ -20,7 +20,7 @@ const BriefHistory = () => {
         <ImageProfile src="mr-big2.jpg" cn="w-[120px] md:w-[300px] h-[70px] md:h-[200px]" />
         <ImageProfile src="mr-big3.jpg" cn="w-[120px] md:w-[350px] h-[70px] md:h-[200px]" />
       </motion.div>
-      <div className="h-[60vh] md:h-screen border">
+      <div className="h-[60vh] md:h-screen">
         <motion.div
           className="mask-wrapper mask"
           animate={{

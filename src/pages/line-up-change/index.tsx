@@ -13,7 +13,7 @@ const LineUpChange = () => {
   const isMobile = useMobileSize()
   const {scrollYProgress} = useScroll({
     target: container,
-    offset: ['start end', `${300}px`]
+    offset: ['start end', `${200}px`]
   })
 
   const scale = useTransform(scrollYProgress,[0,1],[1.4,1])
@@ -25,8 +25,8 @@ const LineUpChange = () => {
           <TextTitle text="LINE-UP CHANGE" cn="text-[2.5rem] md:text-[9.3rem]" />
           <TextRedSmall text="& break-up" />
         </div>
-        <div className="relative flex flex-col gap-20">
-          <div className="md:[&>:nth-child(2)]:w-1/2 md:[&>:nth-child(1)]:w-1/3 md:[&>:nth-child(2)]:mt-2 md:[&>:nth-child(3)]:w-1/2 md:[&>:nth-child(3)]:mt-2">
+        <div className="relative flex flex-col gap-4 md:gap-20">
+          <div className="md:[&>:nth-child(1)]:w-1/2">
             <Paragraph text={lineUpChange[0].p} />
           </div>
           <motion.div className="relative md:absolute right-0 top-0 z-0"
